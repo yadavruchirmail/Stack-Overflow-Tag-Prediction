@@ -7,41 +7,33 @@ Stack Overflow is something which every programmer use one way or another. Each 
 
 
 
-Problem Statemtent
-
+Problem Statemtent:->
 Suggest the tags based on the content that was there in the question posted on Stackoverflow.
 
 
-Real World / Business Objectives and Constraints
+
+Real World / Business Objectives and Constraints:->
 1. Predict as many tags as possible with high precision and recall.
 2. Incorrect tags could impact customer experience on StackOverflow.
 3. No strict latency constraints.
 
-All of the data is in 2 files: Train and Test.
 
+
+All of the data is in 2 files: Train and Test.:->
 Train.csv contains 4 columns: Id,Title,Body,Tags.
-
 Test.csv contains the same columns but without the Tags, which you are to predict.
-
 Size of Train.csv - 6.75GB
-
 Size of Test.csv - 2GB
-
 Number of rows in Train.csv = 6034195
 
 
 
 
-Data Field Explaination
-
+Data Field Explaination:->
 Dataset contains 6,034,195 rows. The columns in the table are:
-
 Id - Unique identifier for each question
-
 Title - The question's title
-
 Body - The body of the question
-
 Tags - The tags associated with the question in a space-seperated format (all lowercase, should not contain tabs '\t' or ampersands '&')
 
 
